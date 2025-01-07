@@ -2,8 +2,203 @@
 <html>
     <head>
         <title>Website</title>
+        <style> 
+          table,th,td{
+             border: 1px solid black;
+        } 
+        </style>
     </head>
     <body>
         <h1>Hello World</h1>
+        <p>ini paragraf 1</p>
+        <p>ini paragraf 2</p>
+        <hr>
+        ini baris 1
+        <br>
+        ini baris 2
+        <!--ini komentar-->
+        <h1> Heading 1</h1>
+        <h2> Heading 2</h2>
+        <h3> Heading 3</h3>
+        <h4> Heading 4</h4>
+        <h5> Heading 5</h5>
+        <h6> Heading 6</h6>
+        <hr>
+        <p><b>Bold</b></p>
+        <p><i>Italic</i></p>
+        <p>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+        <hr>
+
+        <h1>Bahasa Pemrograman untuk dipelajari:</h1>
+        <ul>
+            <li>JavaScript</li>
+            <li>php</li>
+            <li>Java</li>
+            <li>python</li>
+            <li>kotlin</li>
+        </ul>
+
+        <h1>Buah buahan:</h1>
+        <ol type="1">
+            <li>Jeruk</li>
+            <li>Jeruk</li>
+            <li>Jeruk</li>
+            <li>Jeruk</li>
+            <li>Jeruk</li>
+        </ol>
+        
+
+        <table border="1">
+            <tr>
+              <th>Company</th> <!--h itu header, r itu row, d itu data-->
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td> <!--per row-->
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Asal</th>
+                <th>Domisili</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center>Jakarta</center>
+                </td>
+            </tr>
+        </table>
+
+        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg"
+         alt="ini kucing" width="200" height="200"/>
+
+         <a href="https://www.google.com/">
+            google
+         </a>
+         <form action="" method="post">
+            <label for="name">Nama: </label>
+            <input id="name" type="text">
+            <br/>
+            <input type="password" required>
+            <br/>
+            <input type="checkbox">
+            <br/>
+            <input type="radio">
+            <br/>
+            <input type="number" min="1" max="10">
+            <br/>
+            <textarea rows="8" cols="64">Ketik di sini</textarea>
+            <br/>
+            <input type="submit" value="OK">
+        </form>
+
+        <button type="button" style = "color:rgb(85, 32, 39)">
+            OK
+        </button>
+        <button type="button" onclick="doSomething();">
+            Apply
+        </button>
+        <h1>Select Forms</h1>
+        <p> Apa warna favoritmu?</p>
+        <select>
+            <option>merah</option>
+            <option>hijau</option>
+            <option>merah</option>
+            <option>hijau</option>
+            <option>merah</option>
+            <option>hijau</option>
+            <option>merah</option>
+            <option>hijau</option>
+        </select>
+        <p> Apa makanan favoritmu?</p>
+        <select>
+            <option>makanan</option>
+            <option>hijau</option>
+            <option>merah</option>
+            <option>teh</option>
+            <option>pizza</option>
+            <option>hijau</option>
+            <option>merah</option>
+            <option selected>hijau</option>
+        </select>
+        <h1>Option Groups</h1>
+        <p>Minuman paporitmu</p>
+        <select>
+            <optgroup label="jus buah">
+                <option> Jus Apel</option>
+                <option> Jus Anggur</option>
+                <option> Jus Mangga</option>
+                <option> Jus Apel</option>
+                <option> Jus Anggur</option>
+                <option> Jus Mangga</option>
+            </optgroup>
+
+            <optgroup label="jamu">
+                <option> kencur</option>
+                <option> asem</option>
+                <option> pahit</option>
+                <option> Jus Apel</option>
+                <option> Jus Anggur</option>
+                <option> Jus Mangga</option>
+            </optgroup>
+        </select>
+
+        <h1>Radio Button</h1>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="java" name="fav_language" value="Java">
+        <label for="java">Java</label>
+        <form>
+            <label for="umur">Umur :</label>
+            <input id="umur" type="number" min="1" max="9"/>
+        </form>
+      
+       <fieldset>
+        <legend>Data Diri</legend>
+
+        <p>
+            <label for="nama">Nama:</label>
+            <input type="text"name="nama">
+        </p>
+        <label for="usia">Usia:</label>
+        <input type="number"name="usia">
+       </fieldset> 
+       <p> namaku <span> Mr.X</span></p>
+
+       <article>
+        <header>
+            <h1> Header Artikel </h1>
+            <p>Selamat Datang!</p>
+        </header>
+        <main>
+            <p>ini konten utama</p>
+        </main>
+        <footer>
+            <p>Bye!</p>
+        </footer>
+       </article>
+
+       <article>
+        <section class="header">
+            <h1>Header Artikel</h1>
+            <p>Selamat Datang!</p>
+        </section>
+        <section class="main">
+            <p>Ini konten utama</p>
+        </section>
+        <section class="footer">
+           <p>Bye!</p>
+        </section>
+       </article>
     </body>
 </html>

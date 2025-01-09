@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="header.css">
+    <style>
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding: 8px;
+        }
+        footer > p {
+            text-align: end;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .profile-link {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .delete-icon {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Form Belajar</h1>
+        <p>Ini adalah website latihan pertama</p>
+    </header>
+
+    <main class="content">
+        <!-- Form Section -->
+        <div style="display: flex; flex: 1; align-items: left; justify-content: left; flex-direction: column;">
+            <h2>Form Belajar</h2>
+            <form action="" method="post">
+                <label for="name">Nama: </label>
+                <input id="name" type="text">
+                <br/>
+                <label for="dob">Tanggal Lahir: </label>
+                <input id="dob" type="date">
+                <br/>
+                <label>Jenis Kelamin: </label>
+                <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+                <br/>
+                <label for="message">Pesan: </label>
+                <textarea id="message" rows="4" cols="50">Pesan</textarea>
+                <br/>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Table Section -->
+        <div style="display: flex; flex: 1; align-items: center; justify-content: center; flex-direction: column;">
+            <h2>Data Tersimpan</h2>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>Ada Lovelace</td>
+                    <td>December 10, 1815</td>
+                    <td>Perempuan</td>
+                    <td>Belajar Buat Website</td>
+                    <td><a href="#" class="profile-link">Klik Disini</a></td>
+                    <td><span class="delete-icon">&#128465;</span></td>
+                </tr>
+                <tr>
+                    <td>Grace Hopper</td>
+                    <td>December 9, 1906</td>
+                    <td>Perempuan</td>
+                    <td>Hello World</td>
+                    <td><a href="#" class="profile-link">Klik Disini</a></td>
+                    <td><span class="delete-icon">&#128465;</span></td>
+                </tr>
+                <tr>
+                    <td>Margaret Hamilton</td>
+                    <td>August 17, 1936</td>
+                    <td>Perempuan</td>
+                    <td>Test Dulu</td>
+                    <td><a href="#" class="profile-link">Klik Disini</a></td>
+                    <td><span class="delete-icon">&#128465;</span></td>
+                </tr>
+                <tr>
+                    <td>Joan Clarke</td>
+                    <td>June 24, 1917</td>
+                    <td>Laki-Laki</td>
+                    <td>Selalu Semangat</td>
+                    <td><a href="#" class="profile-link">Klik Disini</a></td>
+                    <td><span class="delete-icon">&#128465;</span></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Created By RevoU</p>
+    </footer>
+</body>
+</html>
